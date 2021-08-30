@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desconto">
+        <a href="#"><p>Ganhe R$ 10,00 de desconto no frete</p></a>
+    </div>
+    <header>
+        <p>Jordan Shoes</p>
+    </header>
+    <main>
+        <div class="parallax">
+            <img src="img/wallpaper.jpeg" alt="wallpaper">
+            <span>
+                <h1>A melhor loja de Jordan</h1>
+                <h2>O tênis Jordan é fruto de uma velha e forte <br> parceria entre a Nike e o jogador Michael Jordan</h2>
+            </span>
+        </div>
+        <article>
+            <h1>Destaques</h1>
+            <h2>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</h2>
+            <div class="container">
+                <a href="#"><img src="img/1.png" alt="produto 1"></a>
+                <a href="#"><img src="img/2.png" alt="produto 2"></a>
+                <a href="#"><img src="img/3.png" alt="produto 3"></a>
+                <a href="#"><img src="img/4.png" alt="produto 4"></a>
+                <a href="#"><img src="img/5.png" alt="produto 5"></a>
+                <a href="#"><img src="img/6.png" alt="produto 6"></a>
+                <a href="#"><img src="img/7.png" alt="produto 7"></a>
+                <a href="#"><img src="img/8.png" alt="produto 8"></a>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: false
+        });
+
+        ScrollReveal().reveal('img', { delay: 200 });
+        ScrollReveal().reveal('h1', { delay: 400 });
+        ScrollReveal().reveal('article', { delay: 500 });
+        ScrollReveal().reveal('h2', { delay: 600 });
+    </script>
+</body>
+</html>

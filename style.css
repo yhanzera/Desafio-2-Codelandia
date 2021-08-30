@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(fontes/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(fontes/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(fontes/Montserrat-Medium.ttf);
+}
+
+@media (max-width: 700px) {
+    body .desconto a {
+        font-size: 0.75em;
+    }
+
+    body header p {
+        font-size: 0.80em;
+    }
+
+    body main .parallax h1 {
+        font-size: 1.20em;
+        margin: -240px 50px;
+    }
+
+    body main .parallax h2 {
+        margin: -195px 50px;
+        font-size: 1em;
+        font-weight: lighter;
+        line-height: 1.25em;
+    }
+    
+}
+
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+    --black: #000;
+  
+    --title: #181818;
+    --text: #474747;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.desconto {
+    background-color: var(--black);
+    padding: 10px 0px;
+}
+
+.desconto a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1em;
+    font-family: 'Montserrat-Medium';
+}
+
+header {
+    text-align: center;
+    padding: 10px 0px;
+    font-family: 'Montserrat-Medium';
+    font-size: 2em;
+}
+
+.parallax img{ 
+    background-image: url("../img/wallpaper.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    filter: brightness(35%);
+}
+
+.parallax h1 {
+    position: absolute;
+    margin: -230px 100px;
+    color: var(--white);
+    font-family: 'Montserrat-Bold';
+}
+
+.parallax h2 {
+    position: absolute;
+    margin: -180px 100px;
+    color: var(--white);
+    font-family: 'Montserrat-Medium';
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+article {
+ padding: 50px 0px;
+}
+
+article h1 {
+    text-align: center;
+    font-family: 'Montserrat-Medium';
+    color: var(--black);
+    font-size: 2em;
+}
+
+article h2 {
+    text-align: center;
+    margin: 1em 0em 2em;
+    font-family: 'Montserrat-Medium';
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 4.375em auto;
+    padding: 0px 25px;
+}
+
+.container a img {
+    height: 250px;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #e3e3e372;
+    max-width: 100%;
+    position: relative;
+}
+
+.container a:hover{ 
+    transform: scale(1.2);
+    transition: all 0.1s linear;
+    background-color: #e3e3e8;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+    font-family: 'Montserrat-Medium';
+    font-size: 1em;
+}
